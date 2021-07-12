@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:battery/battery.dart';
+import 'package:battery_plus/battery_plus.dart';
 import 'package:device_info/device_info.dart';
 import 'dart:io';
 
@@ -34,8 +34,9 @@ class _BatteryViewState extends State<BatteryView> {
         return;
       }
     }
-
-    var level = await Battery().batteryLevel;
+    // Instantiate it
+    var battery = Battery();
+    var level = await battery.batteryLevel;
     setState(() {
       this.batteryLevel = level / 100.0;
     });

@@ -17,7 +17,7 @@ dependencies:
   flutter_webview_plugin:
   share:
   fluttertoast:
-  battery:
+  battery_plus:
   intl:
   device_info:
 
